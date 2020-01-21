@@ -110,8 +110,10 @@ h3 {
 
 .between-divs {
     position: absolute;
-    width: 8%;
-    margin: 40px 46% 0 46%;
+    /* width: 8%;
+    margin: 40px 46% 0 46%; */
+    width: 40px;
+    margin: 40px 48.5% 0 48.5%;
     padding: 4px 0 0 0;
     border: none;
     font-size: 160%;

@@ -46,7 +46,8 @@
     }
 
     .between-divs {
-        margin-top: 27.5px;
+        width: 35px;
+        margin: 27.5px auto 0 47.5%;
     }
 
     form input[type=text],
@@ -124,5 +125,10 @@
 @media only screen and (max-width: 480px) {
     body {
         font-size: 14px;
+    }
+
+    .between-divs {
+        width: 30px;
+        margin: 40px auto 0 46.5%;
     }
 }
