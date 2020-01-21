@@ -96,7 +96,7 @@
 
     .col {
         width: 100%;
-        padding-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .col:first-child {
