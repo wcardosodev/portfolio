@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" type="text/css" href="downloadedfiles/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="downloadedfiles/css/Grid.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <link rel="stylesheet" type="text/css" href="myresources/css/style.css">
         <link rel="stylesheet" type="text/css" href="myresources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&display=swap" rel="stylesheet">
@@ -52,23 +53,50 @@
                 <div class="col span-1-of-3 project-item">
                     <h3>Banking App</h3>
                     <img src="./myresources/css/img/projects/hero.jpg" alt="Screenshot from banking application project">
-                    <!-- <div class="about">
-                        <div>Learn More</a>
-                    </div> -->
+                    <div class="overlay">
+                        <div><a class="learn-more" href="#project1" rel="modal:open">Learn More</a></div>
+                    </div>
+
+                    <div id="project1" class="modal">
+                        <h2>Banking Application</h2>
+                        <p></p>
+                        <a href="#" rel="modal:close">Close</a>
+                    </div>
                 </div>
                 <div class="col span-1-of-3 project-item">
-                    <h3>Homemade Crafts Website</h3>
+                    <h3>Home-made Crafts Website</h3>
                     <img src="./myresources/img/Projects/Tamsin.png" alt="Hero image of the crafts website">
-                    <!-- <div class="about">
-                        <div>Learn More</a>
-                    </div> -->
+                    <div class="overlay">
+                        <div><a class="learn-more" href="#project2" rel="modal:open">Learn More</a></div>
+                    </div>
+
+                    <div id="project2" class="modal">
+                        <img src="./myresources/img/Projects/Tamsin.png">
+                        <div class="description">
+                            <h3>Home-made Crafts Website</h3>
+                            <p>A website for a client's local business which sells home-made crafts and personalised designs.</p>
+                        </div>
+                        <a href="#" class="btn-modal">View Project</a href="#">
+                        <!-- <a href="#" class="btn-modal">View on Github</a> -->
+                    </div>
                 </div>
                 <div class="col span-1-of-3 project-item">
-                    <h3>Nurse Mobile Application</h3>
+                    <!-- <h3>Nurse Mobile Application</h3>
                     <img src="./myresources/img/Projects/Pulse Nurse/Login.jpg" alt="Image of 3rd project">
-                    <!-- <div class="about">
-                        <div>Learn More</a>
+                    <div class="overlay">
+                        <div><a class="learn-more" href="#project3" rel="modal:open">Learn More</a></div>
                     </div> -->
+
+                    <div id="project3" class="modal">
+                        <img src="./myresources/img/Projects/Tamsin.png">
+                        <div class="description">
+                            <h3>Mobile App for Nurses</h3>
+                            <p>A mobile project which is linked into our main system, where a nurse can log in, view their shifts, create their timesheet and have it signed,
+                                update their availability and message their employer.</p>
+                        </div>
+                        <!-- <a href="#" class="btn-modal">View Project</a href="#"> -->
+                        <a href="#" class="btn-modal">View on Github</a>
+                    </div>
                 </div>
             </div>
             <!-- <div class="row">
@@ -189,6 +217,7 @@
         <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv.min.js@3.7.2/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <script src="downloadedfiles/js/jquery.waypoints.min.js"></script>
         <script src="myresources/js/scripts.js"></script>
     </body>
