@@ -129,6 +129,7 @@ h3 {
 /* ----------------------------------------- */
 header {
   height: 100vh;
+  background-color: #272a52;
 }
 
 .hero-text-box {
