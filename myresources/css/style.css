@@ -130,6 +130,13 @@ h3 {
 header {
   height: 100vh;
   background-color: #1E2638;
+  position: relative;
+}
+
+header canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-text-box {
