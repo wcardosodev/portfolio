@@ -151,7 +151,7 @@ header {
 .logo {
   float: left;
   color: #fff;
-  margin-top: 12px;
+  padding-top: 12px;
   font-size: 140%;
 }
 
@@ -159,6 +159,11 @@ header {
   float: right;
   list-style-type: none;
   padding-top: 20px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
 }
 
 .main-nav li {
