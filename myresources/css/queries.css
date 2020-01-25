@@ -89,9 +89,13 @@
         font-size: 16px;
     }
 
+    .hero-text-box {
+        width: 100%;
+    }
+
     .main-nav li {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 5px;
     }
 
     .col {
