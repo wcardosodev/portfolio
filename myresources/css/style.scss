@@ -140,45 +140,79 @@ header {
     // background-size: cover;
     // background-position: center;
 
-    canvas {
-        position: absolute;
+    #particles-js {
         height: 100%;
         width: 100%;
+        position: relative;
+
+        canvas {
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
     }
-}
 
-.hero-text-box {
-    position: absolute;
-    width: 40%;
-    margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
+    nav {
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        top: 0;
+        left: 0;
 
-    h1 {
-        margin-bottom: 20px;
+        .logo {
+            float: left;
+            color: #fff;
+            padding-top: 12px;
+            font-size: 140%;
+        }
+
+        .main-nav {
+            float: right;
+            list-style-type: none;
+            padding-top: 20px;
+        
+            li {
+                display: inline-block;
+                margin-left: 40px;
+
+               a:link, 
+                a:visited {
+                    text-decoration: none;
+                    color: #fff;
+                    padding-bottom: 5px;
+                    text-transform: uppercase;
+                }
+                
+                a:hover,
+                a:active {
+                    border-bottom: 2px solid #2980b9;
+                }
+            }
+        }
+    }
+
+    .hero-text-box {
+        position: absolute;
+        width: 40%;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    
+        h1 {
+        }
     }
 }
 
 .logo {
-    float: left;
-    color: #fff;
-    padding-top: 12px;
-    font-size: 140%;
+    
 }
 
 .main-nav {
-    float: right;
-    list-style-type: none;
-    padding-top: 20px;
-
-    li {
-        display: inline-block;
-        margin-left: 40px;
-    }
+    
 }
 
 .main-nav li {
