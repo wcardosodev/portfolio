@@ -95,7 +95,7 @@
 
     .main-nav li {
         display: inline-block;
-        margin-left: 5px;
+        margin-left: 10px;
     }
 
     .col {
@@ -130,6 +130,15 @@
 @media only screen and (max-width: 480px) {
     body {
         font-size: 14px;
+    }
+
+    .hero-text-box {
+        width: 100%;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 10px;
     }
 
     .between-divs {
