@@ -196,6 +196,10 @@ header .hero-text-box {
   text-align: center;
 }
 
+header .hero-text-box h1 {
+  padding-bottom: 45px;
+}
+
 .main-nav li {
   display: inline-block;
   margin-left: 40px;
