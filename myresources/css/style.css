@@ -220,19 +220,18 @@ header .hero-text-box {
   left: 0;
   width: 100%;
   background-color: #1E2638;
-  padding: 10px 0;
   z-index: 10;
   -webkit-box-shadow: 0 4px 2px #3554A3;
           box-shadow: 0 4px 2px #3554A3;
 }
 
 .sticky-nav .logo {
-  margin-top: 0;
+  padding: 5px 0;
   color: #fff;
 }
 
 .sticky-nav .main-nav {
-  margin-top: 5px;
+  padding-top: 10px;
 }
 
 .sticky-nav .main-nav li a:link,

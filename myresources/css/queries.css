@@ -89,12 +89,11 @@
         font-size: 16px;
     }
 
-    .hero-text-box {
+    header .hero-text-box {
         width: 100%;
     }
 
-    .main-nav li {
-        display: inline-block;
+    header nav .main-nav li {
         margin-left: 10px;
     }
 
@@ -137,7 +136,6 @@
     }
 
     .main-nav li {
-        display: inline-block;
         margin-left: 5px;
     }
 
