@@ -93,7 +93,8 @@ h3 {
 
 .btn-full:hover,
 .btn-full:active {
-  background-color: #1E5E87;
+  background-color: #fff;
+  color: #FF8C21;
   border: 1px solid #1E5E87;
 }
 
@@ -313,8 +314,45 @@ header .hero-text-box h1 {
   max-width: 50%;
 }
 
-.modal img {
+.modal .image-gallery {
   width: 100%;
+  position: relative;
+}
+
+.modal .image-gallery img {
+  width: 100%;
+  height: 400px;
+}
+
+.modal .image-gallery .prev, .modal .image-gallery .next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  border: none;
+  background: none;
+  color: #3554A3;
+  height: 40px;
+  width: 40px;
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+
+.modal .image-gallery .prev:hover, .modal .image-gallery .next:hover {
+  color: #FF8C21;
+}
+
+.modal .image-gallery .prev ion-icon, .modal .image-gallery .next ion-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.modal .image-gallery .prev {
+  left: 0;
+}
+
+.modal .image-gallery .next {
+  left: 100%;
 }
 
 .modal .description {

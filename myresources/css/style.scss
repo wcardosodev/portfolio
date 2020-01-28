@@ -2,6 +2,8 @@
 /* BASIC SETUP */
 /* ----------------------------------------- */
 
+$color-orange: #FF8C21;
+
 * {
     margin: 0;
     padding: 0;
@@ -97,7 +99,8 @@ h3 {
 
 .btn-full:hover,
 .btn-full:active {
-    background-color: #1E5E87;
+    background-color: #fff;
+    color: $color-orange;
     border: 1px solid #1E5E87;
 }
 
@@ -326,8 +329,43 @@ header {
 .modal {
     max-width: 50%;
 
-    img {
+    .image-gallery {
         width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, 0%);
+            border: none;
+            background: none;
+            color: #3554A3;
+            height: 40px;
+            width: 40px;
+            transition: 0.2s color;
+
+            &:hover {
+                color: #FF8C21;
+            }
+
+            ion-icon {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            left: 100%;
+        }
     }
 
     .description {
