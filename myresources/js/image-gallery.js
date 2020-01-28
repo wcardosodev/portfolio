@@ -35,7 +35,7 @@ function nextImage (event) {
 var imagePos = {
     jsProject1: {
         currIndex: 1,
-        maxCount: 3,
+        maxCount: 2,
         path: "./myresources/img/Projects/Stock%20Manager/"
     },
 
