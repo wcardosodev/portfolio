@@ -118,6 +118,10 @@
         margin: 0 auto;
     }
 
+    .image-gallery img {
+        height: 200px;
+    }
+
     .about-photo {
         width: 80%;
     }
