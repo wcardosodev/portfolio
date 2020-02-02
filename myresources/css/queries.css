@@ -115,7 +115,6 @@
     .modal {
         width: 80%;
         max-width: 80%;
-        height: 250px;
         margin: 0 auto;
     }
 
@@ -159,8 +158,11 @@
     .modal {
         width: 80%;
         max-width: 80%;
-        height: 250px;
         margin: 0 auto;
+    }
+
+    .image-gallery img {
+        height: 200px;
     }
 
     .between-divs {
