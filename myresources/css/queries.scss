@@ -1,0 +1,177 @@
+/* big tablet - 1200px */ 
+@media only screen and (max-width: 1200px) {
+    header .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/* small tablets - larger tablets */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    h2 {
+        margin-bottom: 17.5px;
+    }
+
+    .modal {
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-desc {
+        width: 100%;
+    }
+
+    .about-photo {
+        width: 75%;
+    }
+
+    .about-photo img {
+        width: 35%;
+    }
+
+    .about-skills {
+        width: 80%;
+        margin: 30px 10% 0 ;
+    }
+
+    .contact-row {
+        width: 70%;
+    }
+
+    .between-divs {
+        width: 35px;
+        margin: 27.5px auto 0 47.5%;
+    }
+
+    form input[type=text],
+    form input[type=email], 
+    form textarea,
+    form input::-webkit-input-placeholder, 
+    form textarea::-webkit-input-placeholder {
+        font-size: 100%;
+    }
+
+    form input[type=text],
+    form input[type=email], 
+    form textarea,
+    form input:-ms-input-placeholder, 
+    form textarea:-ms-input-placeholder {
+        font-size: 100%;
+    }
+
+    form input[type=text],
+    form input[type=email], 
+    form textarea,
+    form input::-ms-input-placeholder, 
+    form textarea::-ms-input-placeholder {
+        font-size: 100%;
+    }
+
+    form input[type=text],
+    form input[type=email], 
+    form textarea,
+    form input::placeholder, 
+    form textarea::placeholder {
+        font-size: 100%;
+    }
+}
+
+/* small phones - small tablets, 481px - 767px */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    header .hero-text-box {
+        width: 100%;
+    }
+
+    header nav .main-nav li {
+        margin-left: 10px;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col:first-child {
+        margin: 1% 0 50px 1.6%;
+    }
+
+    .modal {
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+
+        .image-gallery {
+            img {
+                height: 150px;
+            }
+        }
+    }
+
+    .about-photo {
+        width: 80%;
+    }
+
+    .about-photo img {
+        width: 45%;
+    }
+
+    .about-skills {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .contact-row {
+        width: 80%;
+    }
+}
+
+/* for smaller phones 0px - 480 px */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .hero-text-box {
+        width: 100%;
+    }
+
+    .main-nav li {
+        margin-left: 5px;
+    }
+
+    .modal {
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+
+        .image-gallery {
+            
+            img {
+                height: 150px;
+            }
+        }
+    }
+
+    .between-divs {
+        width: 30px;
+        margin: 40px auto 0 46.5%;
+    }
+}
