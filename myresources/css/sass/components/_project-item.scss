@@ -1,0 +1,81 @@
+.project-item {
+    position: relative;
+    margin: 0 1rem;
+    transition: all 0.3s;
+
+    &:hover &__image {
+        opacity: 0.1;
+        border: 1px solid $color-blue;
+    }
+
+    &:hover &__overlay {
+        animation: project-item__overlay 0.3s ease-out;
+        animation-fill-mode: forwards;
+
+        &--title, &--text {
+            animation: project-item__overlay--title 1s ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 0.15s;
+        }
+
+        &--learn-more {
+            animation: project-item__overlay--learn-more 1s ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 0.15s;
+        }
+    }
+
+    &__image {
+        opacity: 1;
+        display: block;
+        height: 200px;
+        width: 100%;
+        border-radius: $item-border-radius;
+        box-shadow: $item-box-shadow;
+        margin: 0 auto;
+        transition: all 0.3s;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        text-align: center;
+        opacity: 0;
+        width: 100%;
+
+        &--title, &--text {
+            opacity: 0;
+            text-align: center;
+            margin-bottom: 10px;    
+        }
+
+        &--title {
+            color: $color-blue;
+            font-weight: bold;
+            text-transform: uppercase;    
+        }
+
+        &--text {
+            color: $color-orange;
+        }
+
+        &--learn-more {
+            opacity: 0;
+            color: $color-white;
+            background-color: $color-blue;
+            border: 1px solid transparent;
+            padding: 7.5px 12.5px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+
+            &:hover {
+                color: $color-orange;
+                background-color: $color-white;
+                border-color: $color-orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.review-item {
+    border-radius: $item-border-radius;
+    background-color: $color-blue;
+    padding: 1.2rem;
+    box-shadow: $item-box-shadow;
+    transition: all 0.3s;
+    width: 95%;
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.03);
+    }
+
+    &__content {
+        color: $color-white;
+    }
+
+    &__name {
+        color: $color-orange;
+        font-weight: bold;
+        display: inline-block;
+        padding-top: .5rem;
+    }
+}

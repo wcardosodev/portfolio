@@ -1,0 +1,45 @@
+@keyframes project-item {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-1rem) scale(1.05);
+        opacity: 0.1;
+    }
+}
+
+@keyframes project-item__overlay {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes project-item__overlay--title {
+    0% {
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-1rem);
+        opacity: 1;
+    }
+}
+
+@keyframes project-item__overlay--learn-more {
+    0% {
+        transform: translateY(1.5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(.5rem);
+        opacity: 1;
+    }
+}

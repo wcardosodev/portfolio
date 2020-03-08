@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <link rel="stylesheet" type="text/css" href="myresources/css/style.css">
         <link rel="stylesheet" type="text/css" href="myresources/css/queries.css">
+
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
 
         <link rel="apple-touch-icon" sizes="180x180" href="myresources/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="myresources/favicons/favicon-32x32.png">
@@ -20,11 +22,6 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="myresources/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-
-        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-
-        <!-- <script data-who='💎 Made with naker.io 💎' src='https://d23jutsnau9x47.cloudfront.net/back/v1.0.3/viewer.js' ></script> -->
 
         <title>William Cardoso - Web Developer</title>
     </head>
@@ -42,28 +39,52 @@
                 </div>
             </nav>
             
-
             <div class="hero-text-box">
                 <h1>William Cardoso <br>Web Developer</h1>
-                <a class="btn btn-full js-scroll-to-projects" href="#">View my projects</a>
-                <a class="btn btn-full js-scroll-to-about" href="#">About me</a>
+                <a class="btn btn--blue btn-animated btn-full js-scroll-to-projects" href="#">View my projects</a>
             </div>
         </header>
-        <!-- <section>
-            <div id="particles-js"></div>
-        </section> -->
-
         <section class="section-projects js-section-projects">
             <div class="row row-heading">
                 <h2>Projects</h2>
                 <!-- <p>A list of my projects using Python</p> -->
             </div>
             <div class="row">
-                <div class="col span-1-of-3 project-item">
-                    <h3>Stock Manager</h3>
-                    <img src="./myresources/img/Projects/Stock%20Manager/1.png" alt="Screenshot from stock manager project">
-                    <div class="overlay">
-                        <div><a class="learn-more" href="#project1" rel="modal:open">Learn More</a></div>
+                <div class="col-4">
+                    <!-- <h3 class="u-text-center">Home-made Crafts Website</h3> -->
+                    <div class="project-item">
+                        <img class="project-item__image" src="./myresources/img/Projects/Tamsins/1.png" alt="Hero image of the crafts website">
+                        <div class="project-item__overlay">
+                            <h3 class="project-item__overlay--title">Tamsins Crafts</h3>
+                            <p class="project-item__overlay--text">&nbsp;</p>
+                            <a class="project-item__overlay--learn-more" href="#project2" rel="modal:open">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div id="project2" class="modal">
+                        <div class="image-gallery">
+                            <img id="jsProject2" src="./myresources/img/Projects/Tamsins/1.png" alt="Hero img of the crafts website">
+                            <button class="prev js-prev"><ion-icon name="arrow-dropleft-circle"></ion-icon></button>
+                            <button class="next js-next"><ion-icon name="arrow-dropright-circle"></ion-icon></button>
+                        </div>
+                        <div class="description">
+                            <h3>Home-made Crafts Website</h3>
+                            <p>A website for a client's local business which sells home-made crafts and personalised designs.</p>
+                        </div>
+                        <a href="https://willaay96.github.io/Crafts-Site/" target="_blank" class="btn-modal">View Website</a>
+                        <!-- <a href="#" class="btn-modal">View on Github</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="project-item">
+                        <img class="project-item__image" src="./myresources/img/Projects/Stock%20Manager/1.png" alt="Screenshot from stock manager project">
+                        <div class="project-item__overlay">
+                            <h3 class="project-item__overlay--title">Stock Manager</h3>
+                            <p class="project-item__overlay--text">Javascript</p>
+                            <a class="project-item__overlay--learn-more" href="#project1" rel="modal:open">Learn More</a>
+                        </div>
                     </div>
 
                     <div id="project1" class="modal">
@@ -81,46 +102,27 @@
                         <!-- <a href="#" rel="modal:close">Close</a> -->
                     </div>
                 </div>
-                <div class="col span-1-of-3 project-item">
-                    <h3>Home-made Crafts Website</h3>
-                    <img src="./myresources/img/Projects/Tamsins/1.png" alt="Hero image of the crafts website">
-                    <div class="overlay">
-                        <div><a class="learn-more" href="#project2" rel="modal:open">Learn More</a></div>
+                <div class="col-4">
+                    <!-- <h3 class="u-text-center">Joke Generator</h3> -->
+                    <div class="project-item">
+                        <img class="project-item__image" src="./myresources/img/Projects/Joke_Api/Joke_Hero.jpeg" alt="Image of the Joke Generator App">
+                        <div class="project-item__overlay">
+                            <h3 class="project-item__overlay--title">Joke Generator</h3>
+                            <p class="project-item__overlay--text">Javascript</p>
+                            <a class="project-item__overlay--learn-more" href="#project3" rel="modal:open">Learn More</a>
+                        </div>
                     </div>
 
-                    <div id="project2" class="modal">
-                        <div class="image-gallery">
-                            <img id="jsProject2" src="./myresources/img/Projects/Tamsins/1.png" alt="Hero img of the crafts website">
-                            <button class="prev js-prev"><ion-icon name="arrow-dropleft-circle"></ion-icon></button>
-                            <button class="next js-next"><ion-icon name="arrow-dropright-circle"></ion-icon></button>
-                        </div>
-                        <div class="description">
-                            <h3>Home-made Crafts Website</h3>
-                            <p>A website for a client's local business which sells home-made crafts and personalised designs.</p>
-                        </div>
-                        <a href="https://willaay96.github.io/Crafts-Site/" target="_blank" class="btn-modal">View Website</a>
-                        <!-- <a href="#" class="btn-modal">View on Github</a> -->
-                    </div>
-                </div>
-
-                <!-- <div class="col span-1-of-3 project-item"> -->
-                    <!-- <h3>Coming Soon</h3>
-                    <img src="./myresources/img/Logo/Standard%20Logo%20Files/Original.png" alt="Project Coming Soon"> -->
-                    <!-- <div class="overlay">
-                        <div><a class="learn-more" href="#project2" rel="modal:open">Learn More</a></div>
-                    </div> -->
-
-                    <!-- <div id="project3" class="modal">
+                    <div id="project3" class="modal">
                         <img src="">
                         <div class="description">
-                            <h3></h3>
-                            <p></p>
+                            <h3>Joke Generator Application</h3>
+                            <p>An application where you can click a button and generate a random joke from an API. You can also use the up and downvotes buttons to review the random joke and you can finally </p>
                         </div>
-                        <a class="btn-modal">Coming soon</a>
-                        <a href="#" class="btn-modal">View on Github</a>
-                    </div> -->
-                <!-- </div> -->
-                
+                        <a href="https://wc-joke-generator.netlify.com/" target="_blank" class="btn-modal">View App</a>
+                        <!-- <a href="#" class="btn-modal">View on Github</a> -->
+                    </div>
+                </div>   
             </div>
             <div class="row">
                 <div class="col span-1-of-3 project-item">
@@ -156,69 +158,120 @@
                 <h2>About me</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-2 about-desc">
-                    <div class="about-photo">
-                        <img src="./myresources/img/will.jpg" alt="Will Cardoso Photo">
-                        <p class="about-photo-header">Who am I?</p>
-                        <p>Hi, my name is William and I am a full stack web developer. <br><br>
-                            I am currently delving into both JS / React.js and Python / Django, to build up my front and back end web development skills.
-                            <!-- I am a web developer who is eager to get started with an entry level position where I would be able to follow my dream of being a web developer. 
-                            I am constantly pushing myself to develop my skills and further my knowledge in the field.  -->
-                        </p>
+                <div class="about-desc">
+                    <div class="col-6">
+                        <img src="./myresources/img/will.jpg" alt="Photo of Will Cardoso" class="about-desc__photo">
+                    </div>
+                    <div class="col-6">
+                        <div class="about-desc__content">
+                            <h3 class="about-desc__content--header">Who am I?</h3>
+                            <p class="about-desc__content--text">My name is William Cardoso and I am currently working as a <span class="about-desc__content--text--job-description">Technical Support / Developer</span> for <span class="about-desc__content--text--job-description">Pulse Professional Software Ltd</span>. In my spare time I have been looking into web development focusing on interesting designs with cool animations bringing pages alive.<br><br>I've been using personal contacts and freelancing websites such as <a href="https://www.upwork.com/o/profiles/users/~0174d40b455c8f65e2/" target="_blank" class="about-desc__content--text--link">Upwork</a> to do projects for clients as a way to build up my expertise and gain personal experience with communicating with clients, managing timeframes and satisfying the clients requirements.<br><br>I have also learnt Javascript and Python using courses from Udemy and creating my own applications using those technologies some of which are listed above. You can view my other project on my <a href="https://github.com/" target="_blank" class="about-desc__content--text--link">Github</a>.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col span-1-of-2 about-skills">
-                    <!-- <ul class="skills-list flex-col">
-                        <li>
-                            <ion-icon name="logo-html5"></ion-icon>
-                            <span>Description ... MAYBE HAVE A PY GAME INSTEAD OF HERO IMAGE???</span>
-                        </li>
-                        <li><ion-icon name="logo-css3"></ion-icon></li>
-                        <li>
-                            <ion-icon name="logo-javascript"></ion-icon>
-                        </li>
-                        <li><ion-icon name="logo-sass"></ion-icon></li>
-                        <li><ion-icon name="logo-python"></ion-icon></li>
-                    </ul> -->
-                    <ul class="skills">
-                        <li class="skill-item">
-                            <div class="skill-text">HTML5</div>
-                            <div class="skill-bar">
-                                <div class="skill-value-html">85%</div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-text">CSS3</div>
-                            <div class="skill-bar">
-                                <div class="skill-value-css">80%</div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-text">Javascript</div>
-                            <div class="skill-bar">
-                                <div class="skill-value-js">75%</div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-text">SASS</div>
-                            <div class="skill-bar">
-                                <div class="skill-value-sass">75%</div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-text">Python</div>
-                            <div class="skill-bar">
-                                <div class="skill-value-python">70%</div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-text">MySQL</div>
-                            <div class="skill-bar">
-                                <div class="skill-value-mysql">60%</div>
-                            </div>
-                        </li>
-                    </ul>
+            </div>
+        </section>
+        <section class="section-skills js-section-skills">
+            <div class="row row-heading">
+                <h2>Skills</h2>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="skill-item">
+                        <ion-icon class="skill-item__icon" name="phone-portrait-sharp"></ion-icon>
+                        <div class="skill-item__text">
+                            <h3 class="skill-item__text--title">Responsive</h3>
+                            <p class="skill-item__text--paragraph">My responsive designs will work on any screen or device.</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-4">
+                    <div class="skill-item">
+                        <ion-icon class="skill-item__icon" name="stopwatch-sharp"></ion-icon>
+                        <div class="skill-item__text">
+                            <h3 class="skill-item__text--title">Speed</h3>
+                            <p class="skill-item__text--paragraph">Time is money therefore speed is a main priority.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="skill-item">
+                        <ion-icon class="skill-item__icon" name="heart"></ion-icon>
+                        <div class="skill-item__text">
+                            <h3 class="skill-item__text--title">Passion</h3>
+                            <p class="skill-item__text--paragraph">I love what I do and create every project with love.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="skill-item">
+                        <ion-icon class="skill-item__icon" name="logo-html5"></ion-icon>
+                        <div class="skill-item__text">
+                            <h3 class="skill-item__text--title">HTML5</h3>
+                            <p class="skill-item__text--paragraph">Creating web pages with HTML5 has always been fairly quick. I've now found 'Emmet' which allows me to write HTML code in half the time in a fun way.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="skill-item">
+                        <ion-icon class="skill-item__icon" name="logo-css3"></ion-icon>
+                        <ion-icon class="skill-item__icon" name="logo-sass"></ion-icon>
+                        <div class="skill-item__text">
+                            <h3 class="skill-item__text--title">CSS3 &amp; Sass</h3>
+                            <p class="skill-item__text--paragraph">Making pretty, dynamic websites is a great thing and CSS makes that possible. Following BEM methodology and using Sass, I have a lot of fun styling projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="skill-item">
+                        <ion-icon class="skill-item__icon" name="logo-javascript"></ion-icon>
+                        <div class="skill-item__text">
+                            <h3 class="skill-item__text--title">Javascript</h3>
+                            <p class="skill-item__text--paragraph">With Javascript I have created a stock manager and a random joke generator which uses API calls to get jokes which you can up or downvote.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="skill-item">
+                        <ion-icon class="skill-item__icon" name="logo-python"></ion-icon>
+                        <div class="skill-item__text">
+                            <h3 class="skill-item__text--title">Python</h3>
+                            <p class="skill-item__text--paragraph">Using Python I have create a few applications which include an English Dictionary converter using a MySQL database and a website blocking script.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section-timeline js-section-timeline">
+            <div class="row row-heading">
+                <h2>My Career Timeline</h2>
+            </div>
+        </section> -->
+        <section class="section-reviews js-section-reviews">
+            <div class="row row-heading">
+                <h2>Reviews</h2>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="review-item">
+                        <p class="review-item__content">William is a hardworking individual who produced a high quality product. He met all deadlines and responded well to feedback. I really enjoyed working with him on this project.</p>
+                        <span class="review-item__name">Ben Friel</span>
+                    </div>
+                </div>
+                <!-- <div class="col-4">
+                    <div class="review-item">
+                        <p class="review-item__content">William is a hardworking individual who produced a high quality product. He met all deadlines and responded well to feedback. I really enjoyed working with him on this project.</p>
+                        <span class="review-item__name">Ben Friel</span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="review-item">
+                        <p class="review-item__content">William is a hardworking individual who produced a high quality product. He met all deadlines and responded well to feedback. I really enjoyed working with him on this project.</p>
+                        <span class="review-item__name">Ben Friel</span>
+                    </div>
+                </div> -->
             </div>
         </section>
         <section class="section-contact js-section-contact">
@@ -233,7 +286,7 @@
                     <input type="submit" value="Submit">
                 </form>
             </div>
-            <button class="between-divs js-scroll-to-top"><ion-icon name="arrow-round-up"></ion-icon></button>
+            <button class="between-divs js-scroll-to-top"><ion-icon name="arrow-up-outline"></ion-icon></button>
         </section>
         <footer>
             <div class="row">
@@ -256,6 +309,7 @@
         <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
         <script src="./myresources/js/app.js"></script>
         <script src="./downloadedfiles/js/jquery.waypoints.min.js"></script>
         <script src="./myresources/js/scroll.js"></script>

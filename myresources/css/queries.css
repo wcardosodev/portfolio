@@ -86,12 +86,10 @@
   header nav .main-nav li {
     margin-left: 10px;
   }
-  .col {
-    width: 100%;
+  .col, .row [class^=col-] {
+    width: 80%;
+    margin: 0 10%;
     margin-bottom: 50px;
-  }
-  .col:first-child {
-    margin: 1% 0 50px 1.6%;
   }
   .modal {
     width: 80%;

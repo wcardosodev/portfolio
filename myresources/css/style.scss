@@ -1,44 +1,20 @@
-/* ----------------------------------------- */
-/* BASIC SETUP */
-/* ----------------------------------------- */
+@import "sass/abstracts/animations";
+@import "sass/abstracts/utilities";
+@import "sass/abstracts/variables";
 
-$color-orange: #FF8C21;
+@import "sass/base/base";
+@import "sass/base/reset";
 
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
+@import "sass/components/button";
+@import "sass/components/project-item";
+@import "sass/components/review-item";
+@import "sass/components/skill-item";
 
-html {
-    font-family: 'Raleway', 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 22px;
-    text-rendering: optimizeLegibility;
-}
+@import "sass/layouts/grid";
+@import "sass/layouts/navigation";
+@import "sass/layouts/section";
 
-/* ----------------------------------------- */
-/* REUSABLE COMPONENTS*/
-/* ----------------------------------------- */
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.row-heading {
-    text-align: center;
-    /* border-bottom: 1px solid #000000; */
-}
-
-.row-heading h2, .row-heading p {
-    padding: 0px 0px 20px 0;
-}
-
-section {
-    padding: 60px 0;
-}
+@import "sass/pages/about";
 
 section:nth-child(even) {
     background-color: #F5F5F5;
@@ -69,65 +45,6 @@ h2 {
 
 h3 {
     font-size: 110%;
-}
-
-/* BUTTONS */
-
-.btn:link,
-.btn:visited {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    -webkit-transition: background-color 0.35s, border 0.35s, color 0.35s;
-    transition: background-color 0.35s, border 0.35s, color 0.35s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-    background-color: #3554A3;
-    border: 1px solid #3554A3;
-    color: white;
-    margin-right: 20px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #3554A3;
-    color: #3554A3;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    background-color: #fff;
-    color: $color-orange;
-    border: 1px solid #1E5E87;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    background-color: #1E5E87;
-    border: 1px solid #1E5E87;
-    color: #fff;
-}
-
-.between-divs {
-    position: absolute;
-    /* width: 8%;
-    margin: 40px 46% 0 46%; */
-    width: 40px;
-    margin: 40px 48.5% 0 48.5%;
-    padding: 4px 0 0 0;
-    border: none;
-    font-size: 160%;
-    background-color: #3554A3;
-    color: #F5F5F5;
-    transition: background-color 0.4s, color 0.4s;
-}
-
-.between-divs:hover {
-    background-color: #F5F5F5;
-    color: #3554A3;
 }
 
 /* ----------------------------------------- */
@@ -211,14 +128,6 @@ header {
     }
 }
 
-.logo {
-    
-}
-
-.main-nav {
-    
-}
-
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
@@ -274,57 +183,7 @@ header {
 /* ----------------------------------------- */
 /* PROJECTS */
 /* ----------------------------------------- */
-.project-item {
-    position: relative;
 
-    &:hover img {
-        opacity: 0.5;
-    }
-
-    &:hover .overlay {
-        opacity: 1;
-    }
-
-    h3 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    img {
-        opacity: 1;
-        display: block;
-        width: 80%;
-        height: 200px;
-        margin: 0 auto;
-        -webkit-transition: opacity 0.5s;
-        transition: opacity 0.5s;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -0%);
-        text-align: center;
-        opacity: 0;
-        -webkit-transition: opacity 0.5s;
-        transition: opacity 0.5s;
-
-        .learn-more {
-            color: #fff;
-            background-color: #3554A3;
-            border: none;
-            padding: 7.5px 12.5px;
-            text-decoration: none;
-            transition: color 0.3s, background-color 0.3s;
-
-            &:hover {
-                color: #FF8C21;
-                background-color: #fff;
-            }
-        }
-    }
-}
 
 .modal {
     max-width: 50%;
@@ -336,6 +195,7 @@ header {
         img {
             width: 100%;
             height: 400px;
+            border-radius: 10px;
         }
 
         .prev, .next {
@@ -494,23 +354,23 @@ header {
     background-color: #FFA049;
 } */ 
 
-.skills .skill-item {
-    display: flex;
-    margin-bottom: 25px;
-}
+// .skills .skill-item {
+//     display: flex;
+//     margin-bottom: 25px;
+// }
 
-.skill-item .skill-text {
-    width: 25%;
-    text-align: center;
-    background-color: #1E2638;
-    color: #fff;
-    padding: 5px 5px;
-}
+// .skill-item .skill-text {
+//     width: 25%;
+//     text-align: center;
+//     background-color: #1E2638;
+//     color: #fff;
+//     padding: 5px 5px;
+// }
 
-.skill-item .skill-bar {
-    width: 75%;
-    background-color: #F5F5F5;
-}
+// .skill-item .skill-bar {
+//     width: 75%;
+//     background-color: #F5F5F5;
+// }
 
 .skill-bar div:first-child {
     background-color: #FF8C21;

@@ -1,0 +1,34 @@
+.skill-item {
+    background-color: $color-blue;
+    border-radius: $item-border-radius;
+    box-shadow: $item-box-shadow;
+    text-align: center;
+    padding: 1.25rem;
+    width: 95%;
+    margin: 0 auto;
+    color: $color-white;
+    transition: all 0.3s;
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.03);
+    }
+
+    &__icon {
+        font-size: 2.5rem;     
+    }
+
+    &__text {
+        padding-bottom: 1rem;
+
+        &--title {
+            padding: 1rem 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color-orange;
+        }
+
+        &--paragraph {
+            font-size: 1.1rem;
+        }
+    }
+}
